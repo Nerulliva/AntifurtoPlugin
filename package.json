@@ -34,7 +34,7 @@
     "verify:web": "npm run build",
     "lint": "npm run eslint && npm run prettier -- --check && npm run swiftlint -- lint",
     "fmt": "npm run eslint -- --fix && npm run prettier -- --write && npm run swiftlint -- --fix --format",
-    "eslint": "eslint . --ext ts",
+    "eslint": "eslint",
     "prettier": "prettier \"**/*.{css,html,ts,js,java}\"",
     "swiftlint": "node-swiftlint",
     "docgen": "docgen --api AntifurtoPlugin --output-readme README.md --output-json dist/docs.json",
@@ -44,29 +44,26 @@
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
-    "@capacitor/android": "^4.0.0",
-    "@capacitor/core": "^4.0.0",
+    "@capacitor/android": "^8.5.2",
+    "@capacitor/core": "^8.5.2",
     "@capacitor/docgen": "^0.0.18",
-    "@capacitor/ios": "^4.0.0",
-    "@ionic/eslint-config": "^0.3.0",
-    "@ionic/prettier-config": "^1.0.1",
-    "@ionic/swiftlint-config": "^1.1.2",
-    "eslint": "^7.11.0",
-    "prettier": "~2.3.0",
-    "prettier-plugin-java": "~1.0.2",
+    "@capacitor/ios": "^8.5.0",
+    "@ionic/eslint-config": "^0.5.0",
+    "@ionic/prettier-config": "^4.0.0",
+    "@ionic/swiftlint-config": "^2.0.0",
+    "eslint": "^10.0.0",
+    "prettier": "~3.9.10",
+    "prettier-plugin-java": "~2.11.0",
     "rimraf": "^3.0.2",
     "rollup": "^2.32.0",
     "swiftlint": "^1.0.1",
-    "typescript": "~4.1.5"
+     "typescript": "~5.9.2"
   },
   "peerDependencies": {
-    "@capacitor/core": "^4.0.0"
+    "@capacitor/core": "^8.5.2"
   },
   "prettier": "@ionic/prettier-config",
   "swiftlint": "@ionic/swiftlint-config",
-  "eslintConfig": {
-    "extends": "@ionic/eslint-config/recommended"
-  },
   "capacitor": {
     "ios": {
       "src": "ios"
