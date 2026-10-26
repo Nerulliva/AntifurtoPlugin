@@ -14,6 +14,8 @@ npx cap sync
 <docgen-index>
 
 * [`echo(...)`](#echo)
+* [`sendMessage(...)`](#sendmessage)
+* [Interfaces](#interfaces)
 
 </docgen-index>
 
@@ -33,5 +35,31 @@ echo(options: { value: string; }) => Promise<{ value: string; }>
 **Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
 
 --------------------
+
+
+### sendMessage(...)
+
+```typescript
+sendMessage(options: MessageOptions) => Promise<{ result: boolean | null; }>
+```
+
+| Param         | Type                                                      |
+| ------------- | --------------------------------------------------------- |
+| **`options`** | <code><a href="#messageoptions">MessageOptions</a></code> |
+
+**Returns:** <code>Promise&lt;{ result: boolean | null; }&gt;</code>
+
+--------------------
+
+
+### Interfaces
+
+
+#### MessageOptions
+
+| Prop              | Type                |
+| ----------------- | ------------------- |
+| **`phoneNumber`** | <code>string</code> |
+| **`message`**     | <code>string</code> |
 
 </docgen-api>
